@@ -189,6 +189,14 @@ var doubleGlobalNumber = function() {
 	NUMBER = NUMBER * 2
 }
 
+var doTwice = function(num){
+					num()
+					num()
+					return NUMBER
+
+}
+
+
 doTwice(incrementGlobalNumber)
 console.assert(NUMBER === 12)
 
@@ -203,6 +211,11 @@ console.assert(NUMBER === 48)
 // "YES." Otherwise, it will does nothing.
 
 var ORACLE = 'NO'
+
+var conditionallyInvoke = function(num) {
+
+
+}
 
 conditionallyInvoke(doubleGlobalNumber)
 console.assert(NUMBER === 48)
