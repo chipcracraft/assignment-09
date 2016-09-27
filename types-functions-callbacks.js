@@ -213,9 +213,13 @@ console.assert(NUMBER === 48)
 var ORACLE = 'NO'
 
 var conditionallyInvoke = function(num) {
-
-
+				if (ORACLE === 'YES') {
+					num()
+				} else {
+				return null }
 }
+
+
 
 conditionallyInvoke(doubleGlobalNumber)
 console.assert(NUMBER === 48)
